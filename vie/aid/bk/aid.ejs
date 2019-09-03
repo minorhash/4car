@@ -1,0 +1,41 @@
+<article class="media">
+<div class="col">
+<%=iusr.name%> <%= usr.nam%> <%=iusr.sama%><br>
+<% if(mer){ %>
+<br>
+<% if(sum){ %>
+sum:
+<%= Math.round(sum) %><br> 
+tax:<%= Math.round(sum*.08) %><br> 
+
+<% } else { %>no sum<% } %>
+
+<% for (let i=0;i<mer.length;i++){ %>
+<%=shop.tit%>:
+<%= mer[i].name%><br>
+<%=shop.sku%>:
+<%= mer[i].sku %><br>
+<%=shop.pri%>:
+<%= mer[i].pri%><br>
+<%=shop.unit%>:
+<%= mer[i].uni%><br>
+<% } %>
+<% } else { %>no mer<% } %>
+<br>
+    </div>
+    </div>
+
+<div class="media-right has-background-ali">
+<p class="pa1">
+Paidy決済をご希望の方は下記ボタンを押してください。<br>
+Paidyのページが表示されますので、
+「お支払い手続きへ」をクリック後、<br>
+Paidyのアカウントにてログインし、お手続きください。</p><br>
+
+<button class="button is-danger" id="paidy-checkout-button" onclick="paidyPay()">Paidy決済</button>
+    </div>
+
+</article>
+
+<script src="https://apps.paidy.com/"></script>
+<script src=js/aid.js></script>

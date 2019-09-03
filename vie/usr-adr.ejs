@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<% include par/head%>
+<% include par/nav%>
+
+<html>
+<body>
+
+<section class="section">
+<div class="row">
+<div class="col is-one-4 bkg-ali">
+</div><!-- /col1-->
+
+<div class="col is-three-4 bkg-bei">
+
+<p class="p-10 has-t-cen bkg-ali">adr reg</p><br>
+<% if(adr!==null){%>
+<div class="bkg-mis p-10">
+<%= iusr.phn%>:<%= adr.phn%>
+</div><!-- /col2-->
+
+<div class="bkg-mis p-10">
+<%= iusr.zip%>:<%= adr.zip%>
+</div><!-- /col2-->
+
+<div class="bkg-mis p-10">
+<%= iusr.sta%>:<%= adr.sta%>
+</div><!-- /col2-->
+
+<div class="bkg-mis p-10">
+<%= iusr.city%>:<%= adr.city%>
+</div><!-- /col2-->
+
+</div><!-- /col2-->
+
+</div><!-- /row-->
+</section>
+<% }else{%>
+alreay
+    <%}%>
+
+<% if(!usr){%>
+    <script>
+window.location.replace("http://localhost:3000/log-in");
+    </script>
+    <%}%>
+</body>
+</html>
+

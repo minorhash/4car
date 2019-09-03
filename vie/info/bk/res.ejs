@@ -1,0 +1,23 @@
+info res
+<div class="box">
+    <% if(reg){%>
+<% for (var i=0;i<reg.length;i++){%>
+
+<div class="row">
+<div class="col">
+<img src="img/cd/png/<%= reg[i]%>.png"><br>
+</div>
+
+<div class="col">
+sku:tms-<%= reg[i]%><br>
+</div>
+</div>
+
+<% } %><!-- for-->
+<% }else{ %>
+no reg
+
+<% } %>
+
+</div>
+

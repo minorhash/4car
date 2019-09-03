@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<% include par/head%>
+<% include nav/nav%>
+
+<html>
+<body>
+
+<div class="row">
+<div class="col-lg-3 bg-ali">
+</div><!-- /col1-->
+
+<div class="col-lg-9 bg-bei">
+
+<p class="p-2 bg-ali">my page</p><br>
+
+<%if(usr){%>
+<%= usr.displayName%>
+<%}else{%>
+<script src="js/red.js"></script>
+<%}%>
+
+</div><!-- /col2-->
+
+</div><!-- /row-->
+
+</body>
+</html>
+

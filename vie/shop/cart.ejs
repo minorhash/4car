@@ -1,0 +1,37 @@
+<article class="media">
+
+<figure class="media-left">
+    <img src=img/jpg/<%=mer.sku%>.jpg >
+</figure>
+
+<div class="media-content">
+
+<div class="content p-2">
+
+    name:
+    <% if(lang=="en"){%> 
+    <span id=ite<%=mer.sku%>e></span>
+    <%} else {%>
+    <span id=ite<%=mer.sku%>j></span>
+    <%} %>
+    <br>
+
+<%=shop.sku%>:    <%=mer.sku%><br>
+<%=shop.pri%>:    <%=mer.pri%><br>
+
+    detail:
+     <% if(lang=="en"){%> 
+    <span id=ite<%=mer.sku%>de></span>
+    <%} else {%>
+    <span id=ite<%=mer.sku%>dj></span>
+    <%} %>
+
+
+    <script src=ite/ite.js></script>
+    <br><br>
+</div>
+
+ </div>
+ <script src="js/sub.js"></script>
+</article>
+

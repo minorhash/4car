@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<%include par/head %>
+    <%include nav/nav%>
+    <%include nav/mod%>
+    <%include nav/sig%>
+
+<body>
+    <div class=container-fluid>
+    <div class=row>
+
+    <div class="col bg-bei p-2">
+<img src="https://graph.facebook.com/<%= usr.id%>/picture?type=small">
+<% if(usr){%>    welcome <%= usr.name.familyName%>  sama
+
+<%}else{%>    <%}%> 
+<% include log/obut%>
+    </div>
+     <div class="col bg-ali">
+     </div>
+ <% include top/1 %>
+<% include top/2 %>
+<% include top/3 %>
+<% include top/4 %>
+<% include top/5 %>
+  
+    </div>    </div>
+</body>
+</html>
